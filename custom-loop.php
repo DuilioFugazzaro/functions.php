@@ -14,3 +14,8 @@
     <?php endwhile; ?>
 
     <?php endif; ?>
+
+    // Ripristina Query & Post Data originali
+    
+    <?php  wp_reset_query();?>
+    <?php wp_reset_postdata();?>
