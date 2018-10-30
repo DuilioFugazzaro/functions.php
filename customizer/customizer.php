@@ -4,6 +4,8 @@ function hsCustomizer($wp_customize){
 
 //codice theme Option
 
+//https://codex.wordpress.org/Class_Reference/WP_Customize_Manager/add_section
+
 $wp_customize->add_section('test_section' , array(
 
     'title'       => esc_html__('Homepage CUSTOM', 'hs'),
@@ -11,6 +13,7 @@ $wp_customize->add_section('test_section' , array(
 
 ));
 
+//https://codex.wordpress.org/Class_Reference/WP_Customize_Manager/add_setting
 
 $wp_customize->add_setting('set_input_text' , array(
 
@@ -19,6 +22,7 @@ $wp_customize->add_setting('set_input_text' , array(
 
 ));
 
+//https://codex.wordpress.org/Class_Reference/WP_Customize_Manager/add_control
 
 $wp_customize->add_control('input_text' , array(
 
